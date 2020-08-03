@@ -2,7 +2,7 @@
 # **intelliRed**
 16 bit MIPS style Micro
 
-![alt text](https://i.imgur.com/wZNK6Iy.png)
+![alt text](https://cdn.discordapp.com/attachments/722230018142371840/739669610747396127/intellired.png)
 *(art by @0x526f6e696e)*
 
 ###### PROGRAMMING MODEL
@@ -25,4 +25,7 @@ for instance: *https://godbolt.org/z/TWz4jh*
 
 # **BITMAPPING**
 ![alt text](https://cdn.discordapp.com/attachments/722230018142371840/739668607146917988/unknown.png)
+
+# **CPU DIAGRAM**
+![alt text](https://cdn.discordapp.com/attachments/722230018142371840/739669286746062907/J3216_2.png)
 
