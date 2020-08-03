@@ -1,3 +1,4 @@
+
 # **intelliRed**
 16 bit MIPS style Micro
 
@@ -23,13 +24,16 @@ for instance: *https://godbolt.org/z/TWz4jh*
 
 
 
-REGISTER                     | IMMEDIATE
------------------------------------------------------------
-ASM MNEMONIC | RTL           | RTL          | ASM MNEMONIC
------------- | ------------- | ------------ | ------------- 
-
-
-
-
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+ REGISTER OP ASM MNEMONIC    | RTL                              | RTL                      | IMMEDIATE OP ASM MNEMONIC 
+---------------------------- | -------------------------------- | ------------------------ | --------------------------
+add $rd, $rs1, $rs2          | R[$rd] ← R[$rs1]  +  R[$rs2]     | R[$rd]← R[$rs1] + imm	   |	unused                  
+addv $rd, $rs1, $rs2	       | R[$rd] ← R[$rs1]  +  R[$rs2]     | unused                   |  unused
+no carry from bit 7 to 8     | no carry from bit 7 to 8         | unused                   |  unused
+sub $rd, $rs1, $rs2	         | R[$rd] ← R[$rs1]  -  R[$rs2]     | R[$rd]← R[$rs1] - imm    | 	sub $rd, $rs1, imm
+and $rd, $rs1, $rs2	         | R[$rd] ← R[$rs1] and R[$rs2]     | R[$rd]← R[$rs1] and imm  |  and $rd, $rs1, imm
+abs $rd, $rs1, $rs2	         | R[$rd] ← abs R[$rs1]             | unused                   |  unused
+xor $rd, $rs1, $rs2	         | R[$rd] ← R[$rs1] xor R[$rs2]     | R[$rd]← R[$rs1] xor imm  |  xor $rd, $rs1, imm
+sll $rd, $rs1, $rs2	         | R[$rd] ← R[$rs1] <<  R[$rs2]     | R[$rd]← R[$rs1] << SHAMT |  sll $rd, $rs1, shamt
+srl $rd, $rs1, $rs2	         | R[$rd] ← R[$rs1] >>  R[$rs2]     | R[$rd]← R[$rs1] >> SHAMT |  srl $rd, $rs1, shamt
+sra $rd, $rs1, $rs2	         | R[$rd] ← R[$rs1] >>  R[$rs2]     | R[$rd]← R[$rs1] >> SHAMT |  sra $rd, $rs1, shamt	
+unused                       | unused                           | pc ← address             |	j address 
