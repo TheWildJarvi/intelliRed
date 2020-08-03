@@ -21,7 +21,15 @@ for instance: *https://godbolt.org/z/TWz4jh*
 
 # **ASSEMBLY LANGUAGE**
 
-First Header | Second Header
------------- | -------------
+
+
+REGISTER                     | IMMEDIATE
+-----------------------------------------------------------
+ASM MNEMONIC | RTL           | RTL          | ASM MNEMONIC
+------------ | ------------- | ------------ | ------------- 
+
+
+
+
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
