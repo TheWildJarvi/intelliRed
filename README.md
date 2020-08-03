@@ -18,3 +18,10 @@ for instance: *https://godbolt.org/z/TWz4jh*
 * 32 output ports
 * 6 stage pipeline
 * 22 tick clock
+
+# **ASSEMBLY LANGUAGE**
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
