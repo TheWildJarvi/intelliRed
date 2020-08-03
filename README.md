@@ -7,9 +7,9 @@
 ###### PROGRAMMING MODEL
 
 The idea is to be able to use a mips32 gcc compiler and then convert the 32 bit mips to this custom 16 bit mips style CPU/ISA.
+for instance: *https://godbolt.org/z/TWz4jh*
 
-
-###### The CPU has the following specifications
+#### The CPU has the following specifications
 
 * 16 bit data
 * 32 integer registers
