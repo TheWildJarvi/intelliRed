@@ -24,5 +24,5 @@ for instance: *https://godbolt.org/z/TWz4jh*
 ![alt text](https://cdn.discordapp.com/attachments/722230018142371840/739667970124546168/unknown.png)
 
 # **BITMAPPING**
-![alt text](https://cdn.discordapp.com/attachments/722230018142371840/739666669722402877/unknown.png)
+![alt text](https://cdn.discordapp.com/attachments/722230018142371840/739668607146917988/unknown.png)
 
